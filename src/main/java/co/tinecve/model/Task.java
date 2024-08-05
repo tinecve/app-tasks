@@ -2,6 +2,7 @@ package co.tinecve.model;
 
 public class Task {
 
+	private Integer id;
 	private String tarea;
 	private String prioridad;
 	private User usuario;
@@ -11,6 +12,22 @@ public class Task {
 		this.tarea = tarea;
 		this.prioridad = prioridad;
 		this.usuario = usuario;
+	}
+
+	public Task(Integer id, String tarea, String prioridad, User usuario) {
+		super();
+		this.id = id;
+		this.tarea = tarea;
+		this.prioridad = prioridad;
+		this.usuario = usuario;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public String getTarea() {
